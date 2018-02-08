@@ -59,3 +59,7 @@ head, body {
     width: 55%;
     margin-top: 17%;
 }
+
+.mail-link {
+    color: #0d91cf;
+}
