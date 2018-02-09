@@ -11,9 +11,10 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav class="nav-bar">
-            <a class="selected" href="https://kirkhorn.me/">Home</a>
-            <a href="contact">Contact</a>
+        <nav class="nav-bar" id="nav-menu">
+            <a class="nav-item selected" href="https://kirkhorn.me/">Home</a>
+            <a class="nav-item" href="contact">Contact</a>
+            <a class="ion-navicon-round hamburger-menu" href="javascript:void(0);" onclick="toggleMenu()"></a>
         </nav>
         <div class="main-container">
             <h1>Knut Kirkhorn</h1>
@@ -21,5 +22,16 @@
             <a class="button ion-social-github" href="https://github.com/Knutakir"> GitHub</a>
             <a class="button ion-social-linkedin" href="https://www.linkedin.com/in/knut-aasgaard-kirkhorn/"> LinkedIn</a>
         </div>
+
+        <script>
+            function toggleMenu() {
+                const navBar = document.getElementById('nav-menu');
+                if (navBar.className === 'nav-bar') {
+                    navBar.className += ' dropped';
+                } else {
+                    navBar.className = 'nav-bar';
+                }
+            }
+        </script>
     </body>
 </html>

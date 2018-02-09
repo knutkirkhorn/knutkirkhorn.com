@@ -11,13 +11,25 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav class="nav-bar">
-            <a href="https://kirkhorn.me/">Home</a>
-            <a class="selected"href="contact">Contact</a>
+        <nav class="nav-bar" id="nav-menu">
+            <a class="nav-item" href="https://kirkhorn.me/">Home</a>
+            <a class="nav-item selected"href="contact">Contact</a>
+            <a class="ion-navicon-round hamburger-menu" href="javascript:void(0);" onclick="toggleMenu()"></a>
         </nav>
         <div class="main-container">
             <h1>Send a mail to:</h1>
             <a class="mail-link" href="mailto:/knutkirk@hotmail.com" style="margin-bottom: 12%;">knutkirk@hotmail.com</a>
         </div>
+        
+        <script>
+                function toggleMenu() {
+                    const navBar = document.getElementById('nav-menu');
+                    if (navBar.className === 'nav-bar') {
+                        navBar.className += ' dropped';
+                    } else {
+                        navBar.className = 'nav-bar';
+                    }
+                }
+            </script>
     </body>
 </html>

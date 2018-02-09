@@ -63,3 +63,60 @@ head, body {
 .mail-link {
     color: #0d91cf;
 }
+
+.hamburger-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-bar {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        margin-bottom: 15%;
+    }
+
+    .main-container, .nav-bar {
+        width: 100%;
+    }
+
+    .nav-bar a.selected {
+        color: #35373a;
+        background-color: #71b780;
+    }
+
+    .nav-bar a:hover {
+        background-color: #ace4b8;
+    }
+
+    .nav-bar .hamburger-menu:hover {
+        border-bottom: 2px solid #ace4b8;
+    }
+
+    .nav-bar .nav-item {
+        display: none;
+        border-bottom: 2px solid transparent;
+    }
+
+    .hamburger-menu {
+        display: block;
+        float: right;
+    }
+
+    .nav-bar.dropped {
+        position: relative;
+    }
+
+    .nav-bar.dropped .hamburger-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .nav-bar.dropped a {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+}
