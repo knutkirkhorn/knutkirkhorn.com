@@ -77,6 +77,11 @@ head, body {
         margin-bottom: 15%;
     }
 
+    .main-container {
+        margin-top: 25%;
+        font-size: 120%;
+    }
+
     .main-container, .nav-bar {
         width: 100%;
     }
