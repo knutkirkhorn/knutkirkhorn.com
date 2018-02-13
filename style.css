@@ -78,7 +78,8 @@ h2 {
 }
 
 #latest-repos {
-    width: 55%;
+    width: 35%;
+    display: inline-block;
 }
 
 #latest-repos .repo {
@@ -98,11 +99,12 @@ h2 {
     padding: 2%;
     border: 1px solid transparent;
     transition: ease-in-out 0.2s;
+    margin-left: 10%;
 }
 
 .repo:hover {
     border: 1px solid #71b780;
-    margin-left: 5%;
+    margin-left: 15%;
 }
 
 .language {
