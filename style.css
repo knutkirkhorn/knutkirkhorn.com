@@ -68,6 +68,50 @@ head, body {
     display: none;
 }
 
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    width: 25%;
+    padding: 2%;
+    border-bottom: 2px solid #71b780;
+    margin-bottom: 2%;
+}
+
+#latest-repos {
+    width: 55%;
+}
+
+#latest-repos .repo {
+    font-size: 65%;
+    
+    list-style-type: none;
+}
+
+.repo {
+    margin: 5px;
+    color: #71b780;
+    text-decoration: none;
+    float: left;
+    clear: left;
+    border-radius: 3px;
+    font-size: 55%;
+    padding: 2%;
+    border: 1px solid transparent;
+    transition: ease-in-out 0.2s;
+}
+
+.repo:hover {
+    border: 1px solid #71b780;
+    margin-left: 5%;
+}
+
+.language {
+    color: #141414;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+}
+
 @media only screen and (max-width: 768px) {
     .nav-bar {
         margin-top: 0;
