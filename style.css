@@ -68,6 +68,60 @@ head, body {
     display: none;
 }
 
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    width: 25%;
+    padding: 2%;
+    border-bottom: 2px solid #71b780;
+    margin-bottom: 2%;
+}
+
+.hidden {
+    display: none;
+}
+
+.repo {
+    list-style-type: none;
+    margin: 5px;
+    color: #71b780;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 65%;
+    padding: 2%;
+    border: 1px solid transparent;
+    transition: ease-in-out 0.2s;
+}
+
+.repo:hover {
+    border: 1px solid #71b780;
+}
+
+.language {
+    color: #141414;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+    #latest-repos {
+        width: 35%;
+        display: inline-block;
+    }
+
+    .repo {
+        float: left;
+        clear: left;
+        margin-left: 10%;
+    }
+
+    .repo:hover {
+        border: 1px solid #71b780;
+        margin-left: 15%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .nav-bar {
         margin-top: 0;
@@ -123,5 +177,15 @@ head, body {
         display: block;
         float: none;
         text-align: left;
+    }
+
+    h2 {
+        width: 55%;
+    }
+
+    .repo {
+        font-size: 100%;
+        display: block;
+        margin-bottom: 5%;
     }
 }
