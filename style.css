@@ -77,34 +77,24 @@ h2 {
     margin-bottom: 2%;
 }
 
-#latest-repos {
-    width: 35%;
-    display: inline-block;
-}
-
-#latest-repos .repo {
-    font-size: 65%;
-    
-    list-style-type: none;
+.hidden {
+    display: none;
 }
 
 .repo {
+    list-style-type: none;
     margin: 5px;
     color: #71b780;
     text-decoration: none;
-    float: left;
-    clear: left;
     border-radius: 3px;
-    font-size: 55%;
+    font-size: 65%;
     padding: 2%;
     border: 1px solid transparent;
     transition: ease-in-out 0.2s;
-    margin-left: 10%;
 }
 
 .repo:hover {
     border: 1px solid #71b780;
-    margin-left: 15%;
 }
 
 .language {
@@ -112,6 +102,24 @@ h2 {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+    #latest-repos {
+        width: 35%;
+        display: inline-block;
+    }
+
+    .repo {
+        float: left;
+        clear: left;
+        margin-left: 10%;
+    }
+
+    .repo:hover {
+        border: 1px solid #71b780;
+        margin-left: 15%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -169,5 +177,15 @@ h2 {
         display: block;
         float: none;
         text-align: left;
+    }
+
+    h2 {
+        width: 55%;
+    }
+
+    .repo {
+        font-size: 100%;
+        display: block;
+        margin-bottom: 5%;
     }
 }

@@ -22,7 +22,7 @@
             <a class="button ion-social-github" href="https://github.com/Knutakir"> GitHub</a>
             <a class="button ion-social-linkedin" href="https://www.linkedin.com/in/knut-aasgaard-kirkhorn/"> LinkedIn</a>
             
-            <div style="margin-top: 15%;">
+            <div class="hidden" id="repo-conatiner" style="margin-top: 15%;">
                 <h2>Latest repos</h2>
                 <div id="latest-repos">
 
@@ -46,6 +46,9 @@
                 req.onload = function(e) {
                     if (req.readyState === 4) {
                         if (req.status === 200) {
+                            // reappear repo container
+                            document.getElementById('repo-conatiner').className = '';
+
                             const response = JSON.parse(req.responseText);
                             const latestRepos = document.getElementById('latest-repos');
 
