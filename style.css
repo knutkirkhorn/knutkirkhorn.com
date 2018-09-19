@@ -32,8 +32,8 @@ head, body {
     background-color: transparent;
     color: #71b780;
     font-size: 75%;
-    padding: 10px;
-    margin: .05%;
+    padding: 10px 20px 10px 20px;
+    margin: .1em;
     transition: 0.2s ease-in-out; 
     border: 1px solid #71b780;
     border-radius: 25px;
@@ -44,11 +44,6 @@ head, body {
     background-color: #71b780;
     color: #3e3e3e;
     cursor: pointer;
-    font-size: 75%;
-    padding: 10px;
-    transition: 0.2s ease-in-out; 
-    border: 1px solid #71b780;
-    border-radius: 25px;
 }
 
 .main-container {
