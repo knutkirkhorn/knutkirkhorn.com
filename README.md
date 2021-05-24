@@ -1,6 +1,6 @@
-# [kirkhorn.me](https://kirkhorn.me/)
+# [knutkirkhorn.com](https://knutkirkhorn.com/)
 This is my personal webpage.
 
-<a href="https://kirkhorn.me/">
+<a href="https://knutkirkhorn.com/">
     <img src="demo.png">
 </a>
