@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import {ExternalLinkIcon} from 'lucide-react';
 
 export default function Header() {
 	return (
@@ -17,7 +18,10 @@ export default function Header() {
 				rel="noopener noreferrer"
 				target="_blank"
 			>
-				Projects
+				<span className="flex flec-col items-center gap-2">
+					Projects
+					<ExternalLinkIcon className="w-4 h-4" />
+				</span>
 			</Link>
 			<Link
 				className="text-lg font-medium text-slate-800 hover:text-black transition duration-100 ease-in-out"
