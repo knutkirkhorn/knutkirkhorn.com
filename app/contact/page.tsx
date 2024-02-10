@@ -1,5 +1,9 @@
 import React from 'react';
 
+export const metadata = {
+	title: 'Knut Kirkhorn - Contact',
+};
+
 export default function Contact() {
 	return (
 		<div className="flex mt-32 gap-4 flex-col items-center justify-center">
