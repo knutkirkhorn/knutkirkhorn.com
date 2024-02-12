@@ -4,7 +4,7 @@ import {ExternalLinkIcon} from 'lucide-react';
 
 export default function Header() {
 	return (
-		<nav className="hidden md:flex gap-8 right-0 justify-center">
+		<nav className="flex gap-8 right-0 justify-center">
 			<Link
 				className="text-lg font-medium text-slate-800 hover:text-slate-950 transition duration-100 ease-in-out"
 				href="/"
