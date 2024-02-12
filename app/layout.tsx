@@ -33,10 +33,10 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 					'flex min-h-screen flex-col p-8 bg-gradient-to-b from-slate-100 to-slate-200 dark:from-gray-900 dark:to-black',
 				)}
 			>
-				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-					<Header />
-					{children}
-				</ThemeProvider>
+				{/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem> */}
+				<Header />
+				{children}
+				{/* </ThemeProvider> */}
 				<Analytics />
 			</body>
 		</html>
