@@ -5,6 +5,7 @@ import './globals.css';
 import React from 'react';
 import type {Metadata, Viewport} from 'next';
 import {Inter} from 'next/font/google';
+import {Analytics} from '@vercel/analytics/react';
 
 import {cn} from '@/lib/utils';
 import Header from '@/components/header';
@@ -36,6 +37,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 					<Header />
 					{children}
 				</ThemeProvider>
+				<Analytics />
 			</body>
 		</html>
 	);
