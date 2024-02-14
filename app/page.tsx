@@ -7,17 +7,18 @@ import {Icons} from '@/components/icons';
 function LinkButton({
 	href,
 	children,
+	...properties
 }: {
 	href: string;
 	children: React.ReactNode;
-}) {
+} & React.ComponentProps<'a'>) {
 	return (
 		<Button
 			asChild
 			variant="secondary"
 			className="shadow-md hover:bg-slate-200"
 		>
-			<a href={href} rel="noopener noreferrer" target="_blank">
+			<a href={href} rel="noopener noreferrer" target="_blank" {...properties}>
 				{children}
 			</a>
 		</Button>
@@ -34,13 +35,22 @@ export default function Home() {
 				👋 Welcome to my page
 			</p>
 			<div className="flex mt-16 gap-4">
-				<LinkButton href="https://github.com/knutkirkhorn">
+				<LinkButton
+					href="https://github.com/knutkirkhorn"
+					aria-label="GitHub profile"
+				>
 					<Github className="h-4 w-4" />
 				</LinkButton>
-				<LinkButton href="https://twitter.com/knutkirkhorn">
+				<LinkButton
+					href="https://twitter.com/knutkirkhorn"
+					aria-label="Twitter profile"
+				>
 					<Icons.Twitter className="h-4 w-4 fill-current" />
 				</LinkButton>
-				<LinkButton href="https://www.linkedin.com/in/knut-aasgaard-kirkhorn/">
+				<LinkButton
+					href="https://www.linkedin.com/in/knut-aasgaard-kirkhorn/"
+					aria-label="LinkedIn profile"
+				>
 					<Linkedin className="h-4 w-4" />
 				</LinkButton>
 			</div>
