@@ -1,5 +1,5 @@
 import React from 'react';
-import {Github, Linkedin} from 'lucide-react';
+import {Linkedin} from 'lucide-react';
 
 import {Button} from '@/components/ui/button';
 import {Icons} from '@/components/icons';
@@ -39,7 +39,7 @@ export default function Home() {
 					href="https://github.com/knutkirkhorn"
 					aria-label="GitHub profile"
 				>
-					<Github className="h-4 w-4" />
+					<Icons.GitHub className="h-4 w-4" />
 				</LinkButton>
 				<LinkButton
 					href="https://twitter.com/knutkirkhorn"
